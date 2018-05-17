@@ -7,8 +7,11 @@ using System.Threading.Tasks;
 
 namespace MySqlTest.Models
 {
-    public class Student : BaseStudent
+    public class BaseScore : BaseModel<BaseScore>
     {
-        public static readonly Student Dao = new Student();
+        public Guid StudentId { get; set; }
+        public Guid SubjectId { get; set; }
+
+        public double Value { get; set; }
     }
 }

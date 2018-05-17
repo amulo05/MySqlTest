@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace MySqlTest.Models
 {
-    public class Student : BaseStudent
+    public class Subject : BaseSubject
     {
-        public static readonly Student Dao = new Student();
+        public static readonly Subject Dao = new Subject();
     }
 }
